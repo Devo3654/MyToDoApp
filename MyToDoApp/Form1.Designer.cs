@@ -41,7 +41,6 @@
             TaskTBX.Name = "TaskTBX";
             TaskTBX.Size = new Size(328, 35);
             TaskTBX.TabIndex = 0;
-            
             // 
             // AddTaskBtn
             // 
@@ -60,6 +59,7 @@
             TasksLbx.Name = "TasksLbx";
             TasksLbx.Size = new Size(514, 544);
             TasksLbx.TabIndex = 2;
+            TasksLbx.Click += TasksLbx_Click;
             // 
             // Form1
             // 
@@ -72,7 +72,7 @@
             Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(5, 6, 5, 6);
             Name = "Form1";
-            Text = "Form1";
+            Text = "ToDo List";
             ResumeLayout(false);
             PerformLayout();
         }

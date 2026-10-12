@@ -7,7 +7,7 @@ namespace MyToDoApp
         {
             InitializeComponent();
         }
-        
+
         private void AddTaskBtn_Click(object sender, EventArgs e)
         {
             MyTasks.Add(TaskTBX.Text);
@@ -15,6 +15,14 @@ namespace MyToDoApp
             TasksLbx.DataSource = null; //Delete the previous data source to avoid duplication
             TasksLbx.DataSource = MyTasks;
 
+        }
+
+        private void TasksLbx_Click(object sender, EventArgs e)
+        {
+            MyTasks.RemoveAt(TasksLbx.SelectedIndex);
+
+            TasksLbx.DataSource = null;
+            TasksLbx.DataSource = MyTasks;
         }
     }
 }
