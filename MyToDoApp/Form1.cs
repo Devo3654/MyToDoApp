@@ -19,6 +19,12 @@ namespace MyToDoApp
 
         private void TasksLbx_Click(object sender, EventArgs e)
         {
+            //if(TasksLbx.SelectedIndex == -1)
+               // return;
+
+            if(MyTasks.Count <=0)
+                return;
+
             MyTasks.RemoveAt(TasksLbx.SelectedIndex);
 
             TasksLbx.DataSource = null;
