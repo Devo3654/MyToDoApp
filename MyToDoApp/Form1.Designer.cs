@@ -41,7 +41,7 @@
             TaskTBX.Name = "TaskTBX";
             TaskTBX.Size = new Size(328, 35);
             TaskTBX.TabIndex = 0;
-            TaskTBX.TextChanged += textBox1_TextChanged;
+            
             // 
             // AddTaskBtn
             // 
@@ -51,6 +51,7 @@
             AddTaskBtn.TabIndex = 1;
             AddTaskBtn.Text = "Add Task";
             AddTaskBtn.UseVisualStyleBackColor = true;
+            AddTaskBtn.Click += AddTaskBtn_Click;
             // 
             // TasksLbx
             // 
@@ -72,7 +73,6 @@
             Margin = new Padding(5, 6, 5, 6);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
